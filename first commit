@@ -1,0 +1,18 @@
+# Git Mission
+
+이 저장소는 Git과 GitHub 연습을 위한 공간입니다.
+
+
+#주요내용 
+1.Git 기본 명령어 학습
+2. Git Bash 및 VS Code를 통한 버전 관리4.GitHub CLI (`gh`)를 통한 리모트 연
+3.로컬 파일을 GitHub 저장소에 업로드
+
+####사용한 명령어
+git init
+git remote add origin https://github.com/내아이디/저장소이름.git
+git add .
+git commit -m "처음 커밋"
+git push -u origin main
+
+
