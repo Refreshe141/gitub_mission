@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글래스모피즘 로그인</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section> <!--전체 로그인 폼을 감싸는 부분-->
+        <div class="form-box"> <!--글래스모피즘 효과를 줄 박스-->
+            <div class="form-content">
+                <form> <!--로그인 입력 필드와 버튼이 포함된 폼.-->
+                    <h2>login</h2>
+                    <div class="inputbox"> <!--아이콘,입력칸 라벨이 들어가는 박스-->
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email"required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox"> <!--아이콘,입력칸 라벨이 들어가는 박스-->
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password"required>
+                        <label>password</label>
+                    </div>
+                    <div class="options"> <!--Remember Me" 체크박스와 "Forgot Password?" 링크.-->
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot Password?</a>       
+                    </div>
+                    <button type="sumbit">Log In</button> <!--로그인 버튼-->
+                    <p class="register">Don't have an account? <a href="#">sign up</a></p>
+                    <p class="register">glassphrisom beta<a href="#">HEllO!</a></p>
+                </form>
+            </div>            
+        </div>
+    </section>   
+</body>
+</html>

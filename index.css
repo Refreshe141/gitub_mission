@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet ms",sans-serif;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("spring.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.frombox{
+    position:relative;
+    width:400px;
+    padding:40px;
+    background: rgba(225,225,225,0.1);
+    border-radius:15px;
+    backdrop-filter: blur(200px) saturate(180%);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+h2{
+    font-size: 2em;
+    color:white;
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+/* 입력칸 & 아이콘 */
+.inputbox input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* 애니메이션 효과 */
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+    font-size: 0.8em;
+    color: #ddd;
+}
+
+/* 옵션(체크박스 + 비밀번호 찾기) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* 로그인 버튼 */
+button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: lightgray;
+}
+
+/* 회원가입 텍스트 */
+.register {
+    margin-top: 15px;
+    color: white;
+}
+
+.register a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
